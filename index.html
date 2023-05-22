@@ -11,7 +11,7 @@
     <header id="header">
       <h1>Prework Study Guide</h1>
       <img src="./assets/MyFace.PNG" alt="Here's a picture of my face" />
-      <h2>✨ Open the Console to See What's Happening ✨</h2>
+      <h2>✨ Open the Console [Command+Option+I (macOS) or Control+Shift+I (Windows)] for a random topic to study ✨</h2>
     </header>
     <main>
     
@@ -19,7 +19,13 @@
           <h2>HTML</h2>
           <ul>
             <li>The head element contains information about the webpage.</li>
+            <li>Link to the CSS file and the JS file within the HTML using: 
+              <ul> <li> &#60link rel="stylesheet" href="./assets/style.css"&#62</li>
+                  <li>  &#60script src="./assets/script.js"&#62&#60/script&#62</li>
+              </ul>
+            </li>
             <li>The body element represents the visible content shown to the user.</li>
+            <li> <b>Sample link code:</b> &#60a href="URL"&#62link text&#60/a&#62 </li>
           </ul>
         </section>
       
@@ -29,51 +35,77 @@
         <ul>
           <li>A margin indicates how much space we want around the outside of an element.</li>
           <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>See HTML notes above for instructions on linking to HTML file</li>
         </ul>
       </section>
-   
-      <section class="card" id="git-section">
-        <h2>Git</h2>
-        <ul>
-          <li>Enter your Git notes here</li>
-        </ul>
-      </section>
-   
+
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
           <li>A variable is a named container that allows us to store data in our code.</li>
           <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>See HTML notes above for instructions on linking to HTML file</li>
+          <li>Sample Code <ul>
+                <li>for (var x = 0; x < array.length; x++) {
+                    console.log(array[x]);
+                  }</li>
+                <li>function myFunction() {}</li>
+                <li>var array = [0, 1, 2, 3]</li>
+                <li>var randomVariable = randomVariable[Math.floor(Math.random() * randomVariable.length)]</li>
+
+          </li>
+          </ul>
         </ul>
       </section>
 
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>  
-          <li>git clone git@github.com:leex3683/prework-study-guide.git</li>
+          <li><b>git clone git@github.com:leex3683/prework-study-guide.git</b> Copy repo to local machine using SSH</li>
           <li>git remote -v allows fetching/pushing</li>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>(git checkout _____ ) moves branches</li>
-          <li>first change code, and save code</li>
-          <li>then stage with  "git add -A"</li>
-          <li>then commit with "git commit -m "comment about change made" "</li>
+          <li>git status checks what branch we are currently on</li>
+
+          <li>git checkout [enter branch]  moves branches</li>
+          <li>Typical workflow <ul></li>
+          <li>Create new feature branch using: git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>Make changes to code/files where needed, then save code/files</li>
+          <li>Then stage with  "git add -A"</li>
+          <li>Then commit with "git commit -m "comment about change made" "</li>
           <li>may be asked for author identity... Use <br/><br/>  
             git config --global user.email "you@example.com"
             <br/> <br/> 
             or
             <br/> <br/> 
             git config --global user.name "Your Name"
+            <br/> <br/> 
             </li>
           <li>git pull origin main  (ensure main is up to date)</li>
           <li>git push origin feature/starter-code   (pushes commit to github)</li>
+        
+          </ul>
         </ul>
       </section>
+
+      <section class="card" id="Helpful-Links">
+      <h3>Helpful Links</h3>
+      <ul>
+        <li><a href="https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide">README</a></li>
+        <li><a href="https://dev.to/alexmercedcoder/in-depth-guide-on-understanding-deploying-web-apps-56ap">Deployment</a></li>
+        <li><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">Creating a github pages site</a></li>
+        <li><a href="https://courses.bootcampspot.com/courses/3872/pages/3-dot-5-6-deploy-to-github-pages?module_item_id=885257">Bootcamp chpt on Deployment</a></li>
+   
+
+      </ul>
+
+
+      </section>
+
+
 
     </main>
 
     <footer>
-      <p>I can code!</p>
+      <p>This is a footer</p>
     </footer>
     <script src="./assets/script.js"></script>
   </body>
